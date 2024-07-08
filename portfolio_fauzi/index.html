@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo" width="70">
+        </div>
+        <nav>
+            <a href="#">Home&#127968;</a>
+            <a href="#">About&#128100;</a>
+            <a href="#">Portfolio&#128196;</a>
+            <a href="#">Contact&#128383;</a>
+        </nav>
+        <div>
+            <a href="#" id="hireMeButton" style="background-color: #e74c3c; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Hire Me</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="info">
+            <h1>I'm Student Fauzi Saputra</h1>
+            <p>Saya Pelajar Di SMK Telekomunikasi Tunas Harapan</p>
+            <a href="#" id="learnMoreLink">Learn more</a>
+        </div>
+        <img src="images/profile.png" alt="Profile Picture" class="profile-picture">
+    </div>
+    <div class="about-section" id="aboutMe">
+        <h1>About Me</h1>
+        <p>Ini Tentang Seorang Fauzi, Bukan Orang Lain</p>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Selamat datang di Halaman Profil Fauzi Saputra.</h3>
+                <p>Saya adalah Fauzi Saputra, seorang siswa dari SMK Telekomunikasi Tunas Harapan</p>
+                <p>Saya memiliki pengalaman pembuatan website, pengelolaan database, dan pengembangan aplikasi CRUD.</p>
+                <p>Saya lahir di Kota Ngawi, Jawa Timur, pada tanggal 9 April 2007.</p>
+            </div>
+        </div>
+    </div>
+    <section id="tujuan-pendidikan">
+        <h3>Tujuan Pendidikan</h3>
+        <ul>
+            <li>
+                Saya tertarik dengan teknologi informasi dan ingin menjadi pengembang perangkat lunak untuk membantu memecahkan masalah menggunakan teknologi.
+            </li>
+        </ul>
+    </section>
+
+    <section id="proyek-rpl">
+        <h3>Proyek RPL</h3>
+        <ul>
+            <li>
+                Membuat Website tentang Sekolah Negeri Pertama
+            </li>
+        </ul>
+    </section>
+
+    <section id="ekstrakurikuler">
+        <h3>Ekstrakurikuler dan Aktivitas</h3>
+        <ul>
+            <li>
+                Mengikuti Ekstrakurikuler Kepramukaan karena saya ingin memiliki jiwa kepemimpinan dan jiwa korsa
+            </li>
+        </ul>
+    </section>
+
+    <div class="contact-content">
+        <h1>Contact Me</h1>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class="footer-content">
+        <footer>
+            <p>&#128205;Copyright &copy; 2024 Fauzi Saputra</p>
+            <a href="mailto:gaissuai@gmail.com">&#128231;Send email</a>
+            <a href="https://www.instagram.com/that_verix?igsh=ejIxYnViYnlhazdq">&#128204;Instagram</a>
+        </footer>
+    </div>
+    <script>
+        document.getElementById("hireMeButton").addEventListener("click", function(event) {
+            event.preventDefault(); 
+            alert("DITERIMA!");
+        });
+
+        document.getElementById("learnMoreLink").addEventListener("click", function(event) {
+            event.preventDefault(); 
+            document.getElementById("aboutMe").scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
